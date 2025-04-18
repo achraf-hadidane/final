@@ -1,0 +1,309 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff;
+  padding-top: 80px; /* Space for fixed nav */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+section {
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.card {
+  height: 470px;
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+  margin-top: 60px;
+}
+
+.card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card .name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
+}
+
+.card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.card .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #11998e;
+}
+
+.card .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card .button button {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button button:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #11998e;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: #11998e;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color: black;
+}
+
+/* Responsive media queries */
+@media (max-width: 992px) {
+  section {
+    padding: 15px;
+  }
+  
+  .card {
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 15px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    font-size: 16px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  
+  .card {
+    height: 460px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 70px;
+  }
+  
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  .card {
+    height: 440px;
+  }
+}
+.filter-container {
+  padding: 20px;
+  background: linear-gradient(to right, #11998e, #38ef7d);;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #fff;
+}
+
+.filter-group select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 16px;
+  min-width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #11998e;
+  box-shadow: 0 0 0 2px rgba(17, 153, 142, 0.2);
+}
+
+/* تعديلات للجوال */
+@media (max-width: 768px) {
+  .filter-group {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}

@@ -1,0 +1,227 @@
+:root{
+    --premarycolor:-webkit-linear-gradient(to right, #11998e, #38ef7d);
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    --scondarycolor:#fff;
+    --Color-1:#57CC99;
+    --bgColor-2:#22282a;
+    --background: #fff;
+    
+    --padding:8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'josefin sans',sans-serif;
+    font-size: 16px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 3.65rem;
+    margin: 1.7rem 0;
+}
+h4{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 2.5rem;
+    color: #ffffff;
+    cursor: pointer; 
+}
+nav{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: -webkit-linear-gradient(to right, #11998e, #38ef7d);
+    background: linear-gradient(to right, #11998e, #38ef7d);;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+nav ul li{
+    margin-left: 0px;
+    list-style-type:none;
+    display: inline-block;
+    margin: 1rem 1.5rem;
+}
+nav ul li a {
+    
+    color:var(--scondarycolor);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.6s;
+    font-weight: 900;
+}
+nav ul li a:hover{
+    color: var(--bgColor-1);
+}
+.home nav img{
+    width: 70px;
+    height: 70px;
+    margin:0%;
+    
+}
+.card .button {
+    
+    display: flex;
+    margin-left: 60px;
+    justify-content: center;
+    
+    
+  }
+.button{
+background: -webkit-linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #38ef7d);;;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 19px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+ button:hover {
+    background: black;
+}
+
+.container-texts{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: #2B9C4E 5px solid;
+    border-radius: 10px 100px / 120px;
+    width: 600px;
+    height: 340px;
+}
+.content{
+    background-color: var(--background);
+    flex-grow: 1;
+    padding: var(--padding);
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.container-imgae img{
+    width: 300px;
+   
+    height: 300px;
+}
+/*-----------------------------------------------------------------*/
+.about{
+    background-color:var(--scondarycolor);
+    font-size: 30px;
+    display: flex ;
+    align-items: center;
+    justify-content:space-around;
+    padding: var(--padding);
+}
+.about .container-img{
+    width: 900px;
+    padding: 2rem var(--padding2);
+}
+.about .container-img img{
+    width: 100% ;
+}
+p{ 
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 21.3px;
+    letter-spacing: 0%;
+}
+.boox{
+    padding: var(--padding2);
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+}
+.boox img{
+padding: 5%;
+ margin: 2.3rem;
+ width: 33px;
+height: 33px;
+}
+/*-----------------------------------------------------------------*/
+.services h1{
+    color: #0C461D;
+    font-size: 53px;
+}
+.services{
+    background-color: #fff;
+    padding: 2rem var(--padding);
+
+}
+.text-center{
+    text-align:space-between;
+}
+.box{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    max-width: 900px;
+    margin-left: 100px;
+    
+}
+
+.card{
+
+padding: 1.3rem 2rem;
+width: 352px;
+height: 340px;
+border-radius: 17px;
+border-width: 5px;
+border: 5px solid #0C461D;
+}
+.card h5{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    font-size: 25px;
+}
+.card img{
+width: 288px;
+height: 195px;
+top: 269px;
+left: 96px;
+border-radius: 12px;
+}
+.fin{
+    display: flex;
+    padding: 6%;
+}
+.fin img{
+    margin-left: 18px;
+}
+.fin h1{ 
+    font-size: 25px;
+    color: #fff;
+}
+.container2-fin h6{
+    font-size: 16px;
+    margin: 60px;
+}
+.container2-fin h1{
+    font-size: 20px;
+    margin-left: 60px;
+}
+.container2-fin{
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;  
+}
+/*-------------------------------------------------------------*/
+/* Profile Section Styles */
